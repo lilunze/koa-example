@@ -1,1 +1,21 @@
+<!--
+ * @Author: lilunze
+ * @LastEditors: lilunze
+-->
 # koa-example
+
+```
+npm install
+npm install -g nodemon
+nodemon ./app
+```
+
+#### 路由
+```
+npm install koa-router --save
+```
+
+#### 跨域模块
+```
+npm install koa2-cors --save
+```
