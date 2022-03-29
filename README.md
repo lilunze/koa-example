@@ -19,3 +19,8 @@ npm install koa-router --save
 ```
 npm install koa2-cors --save
 ```
+
+#### jwt token生成校验
+```
+npm install jsonwebtoken --save
+```
