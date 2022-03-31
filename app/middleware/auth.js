@@ -18,7 +18,7 @@ const auth = async (ctx, next) => {
         message: "请求未授权，检查请求头部是否包含token信息!"
       }
     }
-    console.log(ctx)
+    // console.log(ctx)
   }else{
     await next();
   }
