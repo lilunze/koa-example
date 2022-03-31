@@ -17,4 +17,12 @@ router.get("/data", auth, (ctx) => {
   }
 });
 
+router.post("/login", (ctx) => {
+  console.log(ctx.request.body)
+  ctx.body= {
+    code: 200,
+    message: '请求成功！'
+  }
+})
+
 module.exports = router;

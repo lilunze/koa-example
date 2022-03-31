@@ -15,6 +15,11 @@ nodemon ./app
 npm install koa-router --save
 ```
 
+#### 参数解析
+```
+npm i koa-body --save
+```
+
 #### 跨域模块
 ```
 npm install koa2-cors --save
