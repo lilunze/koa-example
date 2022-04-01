@@ -4,6 +4,7 @@
 -->
 # koa-example
 
+#### 启动项目
 ```
 npm install
 npm install -g nodemon
@@ -28,4 +29,9 @@ npm install koa2-cors --save
 #### jwt token生成校验
 ```
 npm install jsonwebtoken --save
+```
+
+#### 操作sqlite数据
+```
+npm install sqlite3 --save
 ```

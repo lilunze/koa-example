@@ -4,6 +4,7 @@
  */
 const Router = require("koa-router");
 const auth = require("../middleware/auth");
+const test = require('../controller/test')
 
 const router = new Router();
 
@@ -25,5 +26,9 @@ router.post("/login", (ctx) => {
     message: '请求成功！'
   }
 })
+
+// router.get('/test',(ctx) => {
+  
+// })
 
 module.exports = router;
