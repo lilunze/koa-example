@@ -35,3 +35,13 @@ npm install jsonwebtoken --save
 ```
 npm install sqlite3 --save
 ```
+
+### Dom解析操作
+```
+npm install cheerio --save
+```
+
+### csv转JSON
+```
+npm install csvtojson --save
+```

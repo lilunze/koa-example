@@ -2,12 +2,6 @@
  * @Author: lilunze
  * @LastEditors: lilunze
  */
-/**
- * File: sqlite.js.
- * Author: lilz.
- * Email: lilunze@hotmail.com.
- * Datetime: 2021/05/15.
- */
 
  const fs = require('fs');
  const sqlite3 = require('sqlite3').verbose();
@@ -15,14 +9,12 @@
  var DB = DB || {};
  
  DB.SqliteDB = function (db_name) {
-     debugger
-     DB.db = new sqlite3.Database(`../dbs/${db_name}.db`);
- 
-     DB.exist = fs.existsSync(`../dbs/${db_name}.db`);
+     DB.exist = fs.existsSync(`app/dbs/${db_name}.db`);
      if (!DB.exist) {
          console.log("创建数据库文件");
-         fs.openSync(`../dbs/${db_name}.db`, 'w');
+         fs.openSync(`app/dbs/${db_name}.db`, 'w');
      };
+     DB.db = new sqlite3.Database(`app/dbs/${db_name}.db`);
  };
  
  DB.printErrorInfo = function (err) {
